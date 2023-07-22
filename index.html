@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icons/jetson.png">
+
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="navbar">
         <div id="navbar-left">
-            <img src="./icons/jetson.png" alt="">
+            <img src="./icons/jetson.png" alt="" onclick="location.href = './#main-container'">
             <h1>Workshop</h1>
-            <a href="#plan-teenagers">For Teenagers</a>
-            <a href="#plan-startup">For Startups</a>
+            <a href="#personalize-container">For Teenagers</a>
+            <a href="#personalize-container">For Startups</a>
             <a href="#teach-at-jetson">Teach at Jetson</a>
         </div>
         <div id="navbar-right">
             <div id="navbar-input">
-                <input type="text" placeholder="Search Courses">
+                <input type="text" placeholder="Search Courses" id="search-input">
                 <div>
                     <img src="./icons/command.png" alt="">
                     <p>K</p>

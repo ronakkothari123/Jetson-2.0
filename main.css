@@ -99,7 +99,7 @@ p{
 #navbar-input{
     position:relative;
     box-shadow:0 1px 2px 0 var(--border-color);
-    width:256px;
+    padding-right:48px;
     height:32px;
     border-radius:6px;
     border:1px solid var(--border-color);
@@ -113,6 +113,11 @@ p{
     font-size:14px;
     padding-left:6px;
     font-weight:500;
+    transition-duration:250ms;
+}
+
+#navbar-input > input:focus{
+    width:304px
 }
 
 #navbar-input > div{
