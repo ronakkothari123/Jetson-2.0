@@ -1,0 +1,81 @@
+body{
+    overflow:hidden;
+}
+
+#main-container{
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    height:calc(100vh - 56px);
+    padding-top:56px;
+}
+
+#main-container > div{
+    overflow-y:scroll;
+}
+
+#main-container-left{
+    width:288px;
+    padding:24px;
+    border-right:1px solid var(--border-color);
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+
+#main-container-right{
+    padding:24px;
+    width:calc(100vw - 384px);
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    height:calc(100vh - 104px);
+    gap:12px;
+}
+
+#main-container-right > *:not(div){
+    max-width:66%;
+}
+
+#main-container-right > *{
+    flex-shrink:0;
+}
+
+#main-container-right > div:first-of-type{
+    width:100%;
+    height:calc(100vh - 192px);
+    border-radius:24px;
+    background-image:url("../videos/pattern.gif");
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-bottom:24px;
+}
+
+#main-container-left > div{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    width:calc(100% - 24px);
+    padding:12px;
+    border-radius:6px;
+    cursor:pointer;
+    transition-duration:250ms;
+}
+
+#main-container-left > div:not(.active-sidebar):hover{
+    background:var(--bg-color-2);
+}
+
+#main-container-left > div > img{
+    width:24px;
+}
+
+.active-sidebar{
+    background:var(--border-color);
+}
